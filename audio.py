@@ -2,7 +2,7 @@ from google import genai
 import streamlit as st
 
 st.title("Voice to Text")
-client = genai.Client(api_key="AIzaSyDL6aRIsmiFyLxMsNY6Cvh34bcr_MTifrE")
+client = genai.Client(api_key="Add_your_own_API")
 file_name = st.file_uploader(
     "Upload an audio file",
     type=["wav", "mp3", "m4a"]
@@ -27,3 +27,4 @@ if st.button("Generate"):
             st.write(result.text)
     else:
         st.warning("Upload a file first")
+
